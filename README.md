@@ -35,8 +35,8 @@ HTML Structure:
 
 I began by setting up a basic HTML document with meta tags for character encoding and viewport settings for responsive design.
 I linked a Google Fonts stylesheet to use the "Outfit" font throughout the page for a modern, clean look.
-I structured the content inside a <div> with the class qr-container to serve as a wrapper for the entire card, ensuring that the QR code, heading, and description were centrally located on the page.
-I used a <h1> tag for the main heading and a <p> tag for the description, both of which are styled to be readable and align with the overall design goals.
+I structured the content inside a div with the class qr-container to serve as a wrapper for the entire card, ensuring that the QR code, heading, and description were centrally located on the page.
+I used a h1 tag for the main heading and a p tag for the description, both of which are styled to be readable and align with the overall design goals.
 CSS Styling:
 
 I began by using a universal selector to set a default font family, remove any default margins and padding, and apply box-sizing: border-box to make sizing predictable across elements.
