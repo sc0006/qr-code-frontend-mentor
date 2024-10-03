@@ -11,21 +11,24 @@ html {
 
 body {
   background-color: #d6e2f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
 }
 
 .qr-container {
-  width: 35rem;
-  height: 50rem;
   background-color: #fff;
-  margin-top: 8rem;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 2rem;
   padding: 2.4rem;
   box-shadow: 0 5px 30px #adb5bd;
+  width: 35rem;
 }
 
 .qr-img {
+  margin: auto;
+  display: block;
   width: 30rem;
   border-radius: 2rem;
   margin-bottom: 2.4rem;
