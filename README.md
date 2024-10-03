@@ -16,11 +16,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
-For this project, I created a simple webpage that displays a QR code encouraging users to improve their front-end development skills by building projects. The challenge is part of the Frontend Mentor platform. I used HTML and CSS to structure the content and style the page, focusing on a clean layout that works well across different screen sizes. The page features a centered QR code image, a bold heading, and a descriptive call-to-action message that prompts users to scan the code for further learning resources.
+This project is part of a Frontend Mentor challenge that involved building a QR code component using HTML and CSS. The goal was to create a visually appealing and responsive webpage that displays a QR code with a clear message encouraging users to visit Frontend Mentor and improve their coding skills. The design features a clean and modern layout with the QR code, a bold heading, and a supporting description, all of which are centered and easy to read across various device sizes.
 
 ### Screenshot
 
-! ![Alt text](<QR-Code solution.png>)
+[Alt text](<QR-Code solution.png>)
 
 Above is a screenshot of my solution.
 
@@ -33,47 +33,60 @@ Above is a screenshot of my solution.
 
 HTML Structure:
 
-I began by setting up a basic HTML document with meta tags for character encoding and viewport settings for responsive design.
-I linked a Google Fonts stylesheet to use the "Outfit" font throughout the page for a modern, clean look.
-I structured the content inside a div with the class qr-container to serve as a wrapper for the entire card, ensuring that the QR code, heading, and description were centrally located on the page.
-I used a h1 tag for the main heading and a p tag for the description, both of which are styled to be readable and align with the overall design goals.
-CSS Styling:
+Main Container: I started with a basic HTML structure and used the <main> element to wrap the core content, ensuring semantic clarity. Inside the main container, a div with the class .qr-container acts as a wrapper for the QR code, heading, and description.
 
-I began by using a universal selector to set a default font family, remove any default margins and padding, and apply box-sizing: border-box to make sizing predictable across elements.
-I set the base font size using the root html element, with 62.5% to allow for easy rem calculations in other elements.
-For the body, I applied a light background color (#d6e2f0) to create a contrast with the white card containing the QR code.
-The .qr-container div was styled to have a specific width (35rem) and height (50rem), with a white background, rounded corners, and a subtle box shadow to give the card a floating effect.
-Inside the card, the .qr-img class was used to control the width and apply a border-radius to round off the QR code's edges.
-The heading and description are centered and styled with font sizes and weights that make them stand out. The description also has a different color (#495057) to provide some hierarchy between the text elements.
-I included a media query to adjust the margin for smaller screens (max-width of 37.5rem), making the card more accessible on mobile devices.
+QR Code Image: An <img> element with the class .qr-img was used to display the QR code image, ensuring it was responsive and centered within the card.
+
+Text Elements: The heading and paragraph provide context for the QR code, and both are structured semantically with an <h1> for the primary heading and a <p> for the description.
+
+CSS Styling
+
+Global Reset and Font Setup: I applied a global reset using the universal selector \* to remove default margins and paddings, while box-sizing: border-box ensured consistent sizing. I also linked the "Outfit" font from Google Fonts for a clean, modern aesthetic.
+
+Layout and Centering: The body was styled using Flexbox to vertically and horizontally center the .qr-container on the page. The min-height: 100svh guarantees the layout takes up the entire viewport height for a balanced appearance, even on larger screens.
+
+QR Code Card Styling: The .qr-container class was styled to have a width of 35rem, with rounded corners (border-radius: 2rem) and a subtle shadow (box-shadow: 0 5px 30px #adb5bd) to create a card-like appearance. Inside, the QR code image is scaled to 30rem and centered using margin: auto.
+
+Typography: The heading was given a bold weight and large font size (2rem) for emphasis, while the paragraph was styled with a smaller font size (1.5rem) and a muted color (#495057) to create visual hierarchy.
+
+Responsiveness: I included a media query that adjusts the layout for screens narrower than 37.5rem (600px). This ensures the card remains centered and legible on mobile devices, with padding and margins that adjust to fit smaller screens.
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Flexbox for layout
+- Media queries for responsiveness
 
 ### What I learned
 
-I gained hands-on experience with building a simple, centered layout using CSS. I learned how to structure content within a container and center it both horizontally and vertically on the page. Additionally, the use of media queries allowed me to ensure that the layout would adapt well on smaller screens like mobile devices.
+In this project, I focused on improving my skills in responsive design, centering elements using Flexbox, and maintaining a clean layout across different screen sizes. One key learning was how to simplify layout control with Flexbox and how to make elements responsive using media queries.
+
+I also gained more confidence in using modern web fonts and ensuring text and images are well-aligned. The media query implementation helped me ensure that the design would remain user-friendly and visually appealing on smaller devices.
 
 ```css
-.qr-container {
-  margin-left: auto;
-  margin-right: auto;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
 }
 
-@media screen and (max-width: 37.5rem) {
-  .qr-container {
-    margin-top: 2rem;
-  }
+.qr-container {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2.4rem;
+  width: 35rem;
+  box-shadow: 0 5px 30px #adb5bd;
 }
 ```
 
 ### Continued development
 
-I really had to play with padding and width/height to get the image to center inside the container. I hope with more practice I can simplify this process and make it a lot easier on myself.
+I plan to further explore responsive design techniques, particularly improving my understanding of fluid layouts and media queries. Although I successfully implemented a mobile-friendly layout, I see room for improvement in simplifying the process of centering content inside containers and optimizing padding and margin settings for better responsiveness.
 
-I also hope to do more involving media queries because up until this project I had never used them before.
+In future projects, I aim to dive deeper into accessibility features and advanced CSS layouts like Grid to better organize complex designs.
 
 ### Useful resources
 
