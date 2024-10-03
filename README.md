@@ -33,11 +33,11 @@ Above is a screenshot of my solution.
 
 HTML Structure:
 
-Main Container: I started with a basic HTML structure and used the <main> element to wrap the core content, ensuring semantic clarity. Inside the main container, a div with the class .qr-container acts as a wrapper for the QR code, heading, and description.
+Main Container: I started with a basic HTML structure and used the main element to wrap the core content, ensuring semantic clarity. Inside the main container, a div with the class .qr-container acts as a wrapper for the QR code, heading, and description.
 
-QR Code Image: An <img> element with the class .qr-img was used to display the QR code image, ensuring it was responsive and centered within the card.
+QR Code Image: An img element with the class .qr-img was used to display the QR code image, ensuring it was responsive and centered within the card.
 
-Text Elements: The heading and paragraph provide context for the QR code, and both are structured semantically with an <h1> for the primary heading and a <p> for the description.
+Text Elements: The heading and paragraph provide context for the QR code, and both are structured semantically with an h1 for the primary heading and a p for the description.
 
 CSS Styling
 
