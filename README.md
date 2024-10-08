@@ -37,7 +37,7 @@ Main Container: I started by structuring the content using the main element for 
 
 QR Code Image: The img tag with class .QR-img was used for the QR code, ensuring it scales and centers responsively within the card.
 
-Text Elements: The heading h2> and paragraph p were added to give context to the QR code. Both are semantically appropriate for their roles and visually align within the card.
+Text Elements: The heading h2 and paragraph p were added to give context to the QR code. Both are semantically appropriate for their roles and visually align within the card.
 
 CSS Styling
 
@@ -57,13 +57,12 @@ Typography: The heading (.prime-heading) was given a bold weight and a large fon
 
 ### What I learned
 
-In this project, I focused on improving my skills in responsive design, centering elements using Flexbox, and maintaining a clean layout across different screen sizes. One key learning was how to simplify layout control with Flexbox and how to make elements responsive using media queries.
+In this project, I focused on improving my skills in responsive design, centering elements using Flexbox, and maintaining a clean layout across different screen sizes. One key learning was how to simplify layout control with Flexbox.
 
 I also gained more confidence in using modern web fonts and ensuring text and images are well-aligned.
 
 ```css
 body {
-  background-color: #d6e2f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,20 +70,18 @@ body {
   min-height: 100svh;
 }
 
-.QR-container {
+.qr-container {
   background-color: #fff;
   border-radius: 2rem;
   padding: 2.4rem;
+  width: 35rem;
   box-shadow: 0 5px 30px #adb5bd;
-  max-width: 35rem;
 }
-
+```
 
 ### Continued development
 
-In future projects, I want to continue improving my understanding of accessibility and learn more about CSS Grid to expand my layout skills.
-
-
+In future projects, I aim to dive deeper into accessibility features and advanced CSS layouts like Grid to better organize complex designs.
 
 ### Useful resources
 
@@ -93,4 +90,3 @@ In future projects, I want to continue improving my understanding of accessibili
 ## Author
 
 - Frontend Mentor - [@sc0006](https://www.frontendmentor.io/profile/sc0006)
-```
