@@ -1,8 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 html {
@@ -18,18 +28,15 @@ body {
   min-height: 100svh;
 }
 
-.qr-container {
+.QR-container {
   background-color: #fff;
   border-radius: 2rem;
   padding: 2.4rem;
   box-shadow: 0 5px 30px #adb5bd;
-  width: 35rem;
+  max-width: 35rem;
 }
 
-.qr-img {
-  margin: auto;
-  display: block;
-  width: 30rem;
+.QR-img {
   border-radius: 2rem;
   margin-bottom: 2.4rem;
 }
@@ -49,18 +56,4 @@ body {
 .prime-heading,
 .description {
   text-align: center;
-}
-
-/*
-
-
-Media Queries
-
-
-*/
-
-@media screen and (max-width: 37.5rem) {
-  .qr-container {
-    margin-top: 2rem;
-  }
 }
